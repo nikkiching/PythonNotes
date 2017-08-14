@@ -12,7 +12,7 @@ conda create -n gl-env python=2.7 anaconda=4.0.0
 source activate gl-env
 
 ## Install GraphLab Create
-pip install --upgrade --no-cache-dir <your-liscense-link-apply-from-graphlab> GraphLab-CReate-License.tar.gz
+pip install --upgrade --no-cache-dir ___your-liscense-link-apply-from-graphlab___ GraphLab-CReate-License.tar.gz
 
 ## Install ipython-notebook
 conda install ipython-notebook
@@ -20,6 +20,6 @@ conda install ipython-notebook
 ### Every time you want to activate the env with GraphLab Create & SFrame
 source activate gl-env
 
-## If the SFrame crash, it may be because the liscense key config file corruption
-## try sf = graphlab.SFrame()
-## try remove ~/.graphlab and set graphlab.product_key.set_product_key()
+### If the SFrame crash, it may be because the liscense key config file corruption
+try "sf = graphlab.SFrame()"
+or, try "remove ~/.graphlab" and "graphlab.product_key.set_product_key()"
